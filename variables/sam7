@@ -1,0 +1,6 @@
+const a = 99
+const b = 46
+const c = 54
+const d = 77
+
+console.log(a-b/c+d);

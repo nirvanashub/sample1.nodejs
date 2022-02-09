@@ -1,0 +1,4 @@
+const a = 987
+const b = 42
+
+console.log(a/b);

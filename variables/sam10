@@ -1,0 +1,11 @@
+const humans = 9;
+
+console.log(humans);
+//humans = 9;
+
+
+let humansTwo = 66;
+humansTwo = 9;
+
+console.log(humansTwo);
+

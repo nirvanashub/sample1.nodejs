@@ -1,0 +1,6 @@
+const a = 455
+const b = 8785
+const c = 909
+const d = 45
+
+console.log(a*b/c*d);

@@ -1,0 +1,5 @@
+const a = 900
+const b = 666
+const c = 879
+
+console.log(a/b-c);
