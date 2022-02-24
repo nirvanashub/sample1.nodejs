@@ -8,3 +8,4 @@ getid(){
 user = new user();
 console.log(user);
 console.log(user.getid());
+

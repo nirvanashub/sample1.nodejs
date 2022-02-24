@@ -12,3 +12,5 @@ const myCar = new Car("Ford", 2018);
 "My car is " + myCar.age() + " years old.";
 console.log(myCar);
 console.log(myCar.age());
+
+
