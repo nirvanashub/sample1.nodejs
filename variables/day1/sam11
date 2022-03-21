@@ -1,5 +1,0 @@
-let a = shubham;
-let b = trivedi; 
-let c = joy;
-
-console.log(a+b=c);
