@@ -1,0 +1,8 @@
+const a = 23
+const b = 36
+const c = 33333
+const d = 452502
+const e = 92
+
+console.log(a*b+c-d/e);
+
