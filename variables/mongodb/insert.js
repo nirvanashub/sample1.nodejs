@@ -15,8 +15,8 @@ async function main() {
   console.log('Connected successfully to server');
   const db = client.db(dbName);
   const collection = db.collection('items');
-  const findResult = await collection.find({}).toArray();
-  console.log('Found items =>', findResult);
+  const insertResult = await collection.insertMany([{ choclate : 'kitkat' }, { fruit : 'banana' }, { dairy : 'butter' }]);
+console.log('Inserted documents =>', insertResult);
 
   // the following code examples can be pasted here...
 
