@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 let a = 'shubham';
 let b = 'trivedi';
 
 console.log(a+b);
+=======
+let a = 'shubham';
+let b = 'trivedi';
+
+console.log(a+b);
+>>>>>>> a3339e7df4be0cb7ade162fd9eaa37cc9aaf406c

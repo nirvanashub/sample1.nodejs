@@ -1,3 +1,4 @@
+
 const number = 20;
 if (number == 19) {
     console.log('number is 19')

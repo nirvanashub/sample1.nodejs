@@ -26,4 +26,3 @@ const connectFun = async () => {
   console.log(err);
  }
 }
-connectFun();

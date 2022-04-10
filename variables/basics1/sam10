@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const humans = 9;
 
 console.log(humans);
@@ -9,3 +10,16 @@ humansTwo = 9;
 
 console.log(humansTwo);
 
+=======
+const humans = 9;
+
+console.log(humans);
+//humans = 9;
+
+
+let humansTwo = 66;
+humansTwo = 9;
+
+console.log(humansTwo);
+
+>>>>>>> a3339e7df4be0cb7ade162fd9eaa37cc9aaf406c

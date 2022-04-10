@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 const a = 99
 const b = 46
 const c = 54
 const d = 77
 
 console.log(a-b/c+d);
+=======
+const a = 99
+const b = 46
+const c = 54
+const d = 77
+
+console.log(a-b/c+d);
+>>>>>>> a3339e7df4be0cb7ade162fd9eaa37cc9aaf406c

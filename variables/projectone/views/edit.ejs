@@ -1,0 +1,38 @@
+<h1> Edit Registration Form </h1><br>
+
+<form method="POST" name="form1" action="/updateRecordById?id=<%=student.TestID%>">
+
+    <label>Name</label>
+    <input type="text" id="name" name="name" value="<%=student.name%>">
+
+    <label>Last Name</label>
+    <input type="text" id="lastname" name="lastname" value="<%=student.lastname%>">
+
+    <label>Father Name</label>
+    <input type="text" id="fathername" name="fathername" value="<%=student.fathername%> "> <br> <br>
+
+    <label>Mother Name</label>
+    <input type="text" id="mothername" name="mothername" value=" <%=student.mothername%>">
+
+    <label for="birthday">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" value="<%=student.dob%>">
+
+    <br><br>
+
+    <label for="city">City Name</label>
+    <select name="city" value=" <%=student.city%>">
+        <option value="himachal">Indore</option>
+        <option value="punjab">Bangluru</option>
+        <option value="Hariyana">Hyderabad</option>
+    </select>
+
+    <label>Pincode</label>
+    <input type="number" id="pincode" name="pincode" value="<%=student.pincode%>"> <br><br>
+
+    <label>address</label>
+    <input type="text" id="address" name="address" value="<%=student.address%>"> <br><br>
+    <button>Save </button>
+    <input type="hidden" value=" <%=student.TestID%>"><br>
+</form>
+
+<a href='/getRecord'> <input type="submit" value="Cancel"> </a> 

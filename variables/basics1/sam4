@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 const a = 987
 const b = 42
 
 console.log(a/b);
+=======
+const a = 987
+const b = 42
+
+console.log(a/b);
+>>>>>>> a3339e7df4be0cb7ade162fd9eaa37cc9aaf406c

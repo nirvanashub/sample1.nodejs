@@ -1,0 +1,27 @@
+<h1>Details of Student is <%= Customer.length %>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+
+            <th>Department</th>
+
+        </tr>
+    
+        <% for(var i=0; i < JSON.stringify(Customer.length); i++) { %>
+            <tr>
+                <td>
+                    <%= Customer[i]._id %>
+                </td>
+                <td>
+                    <%= Customer[i].Name %>
+                </td>
+                <td>
+                    <%= Customer[i].Age %>
+                </td>
+                <td>
+                    <%= Customer[i].Department %>
+                </td>
+            </tr>
+            <% } %>
+    </table>
+</h1>

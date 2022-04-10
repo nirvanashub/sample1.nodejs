@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Login Form</title>
+  </head>
+  <body>
+	<div class="login">
+		<h1>Login</h1>
+		<form action="/auth" method="post">
+			<label for="username">
+				<!-- font awesome icon -->
+				<i class="fas fa-user"></i>
+			</label>
+			<input type="text" name="name" placeholder="name" id="name" required><br>
+			<label for="password">
+				<i class="fas fa-lock"></i>  
+			</label>
+			<input type="password" name="lastname" placeholder="lastname" id="lastname" required><br> <br>
+			<input type="submit" value="Login">
+		</form>
+		<% if (errMsg !== '') {%> 
+			<p style="color:red; font-size:70%;"><%= errMsg %></p> 
+		<% } else {%>
+			<p style="color:green; font-size:70%;"><%= msg %></p> 
+		<% } %>
+		<a href="getForm" class="btn btn-primary">Sign Up</a>
+		
+
+	</div>
+</body>
+</html>

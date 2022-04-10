@@ -14,3 +14,4 @@ router.delete('/delete', function (req, res, next) {
         console.log(e);
     });
 });
+module.exports = router;

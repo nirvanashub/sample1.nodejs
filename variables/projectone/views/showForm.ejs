@@ -1,0 +1,38 @@
+<h1> Registration Form </h1><br>
+
+<form method="POST" name="form1" action="/postRegDetails">
+
+    <label>First Name</label>
+    <input type="text" placeholder="Name" id="name" name="name">
+
+    <label>Last Name</label>
+    <input type="text" placeholder="Last Name" id="lastname" name="lastname">
+
+    <label>Fathers Name</label>
+    <input type="text" placeholder="Fathers Name" id="fathername" name="fathername"> <br> <br>
+
+    <label>Mothers Name</label>
+    <input type="text" placeholder="Mothers Name" id="mothername" name="mothername">
+
+    <label for="birthday">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
+
+    <br><br>
+
+    <label for="city">City Name</label>
+    <select name="city" name="city">
+        <option value="himachal">himachal</option>
+        <option value="punjab">punjab</option>
+        <option value="Hariyana">Hariyana</option>
+    </select> 
+
+    <label>Pincode</label>
+    <input type="number" placeholder="pincode" id="pincode" name="pincode"> <br><br>
+
+    <label><Address></Address></label>
+    <input type="number" placeholder="Address" id="address" name="address"> <br><br>
+
+
+ <input type="submit" class="registerbtn" value="submit"><br>
+</form>
+<a href='/getRecord'>  <input type="submit" value="Show Details"> </a>
