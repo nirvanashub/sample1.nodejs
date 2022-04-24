@@ -6,7 +6,7 @@ const { query } = require('express');
 
 router.post('/auth', function (req, res, next) {
     const privateKey = '!@#DFTbnhu*';
-    const pool = require('../sqlserver');
+    const pool = require('../sqlconnect');
     if (req.body.email && req.body.lname) {
         pool.getPool().then(async (pool) => {
             let result = await pool.request()
@@ -43,7 +43,7 @@ router.post('/auth', function (req, res, next) {
 
 
 router.get('/homePage', function (req, res, next) {
-    const pool = require('../sqlserver');
+    const pool = require('../sqlconnect');
     pool.getPool().then(async (pool) => {
         let result = await pool.request()
             .query(`select comment from comment`);

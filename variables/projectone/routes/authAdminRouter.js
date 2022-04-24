@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 
 router.post('/authAdmin', function (req, res, next) {
     const privateKey = '!@#DFTbnhu*';
-    const pool = require('../sqlserver');
+    const pool = require('../sqlconnect');
     if (req.body.adminEmail && req.body.password) {
         pool.getPool().then(async (pool) => {
             let result = await pool.request()
