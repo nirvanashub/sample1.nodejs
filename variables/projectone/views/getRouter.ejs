@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%- include('./head.ejs') %>
+    
+    <title>Students</title>
+</head>
+
+<body>
+    <%- include('./nav.ejs') //we have made seperate file nav.ejs to store our links %>
+        <h1>Number Of Registerd Users <%= student.length %><br>
+                <a href='/getform'>Add User</a><br>
+                <a href='/giveComment'>Notice for Students</a><br>
+                <table border="1">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                    <% for (var i=0; i< JSON.stringify(student.length); i++){ %>
+                        <tr>
+                            <td>
+                                <%=student[i].fname %>
+                            </td>
+                            <td>
+                                <%=student[i].lname %>
+                            </td>
+                            <td>
+                                <%=student[i].email %>
+                            </td>
+                            <td>
+                                <a href='/getRecordById/<%=student[i].email%>'>Update</a>
+                                <a href="/deleteRecord/<%=student[i].email%>"
+                                    onclick="return confirm ('Are you sure?')">Delete</a>
+                            </td>
+                        </tr>
+                        <% } %>
+
+                </table><br>
+        </h1>
+        <footer class="background">
+            <%- include('./footer.ejs') %>
+        </footer>
+</body>
+
+</html>

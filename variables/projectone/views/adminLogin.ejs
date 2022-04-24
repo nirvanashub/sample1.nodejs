@@ -4,39 +4,41 @@
 <head>
 	<%- include('./head.ejs') %>
 		<link rel="stylesheet" href="stylesheets/style.css" type="text/css">
-		<title>Login Form</title>
+		<title>Admin Form</title>
 </head>
 
 <body>
+
 	<div class="login">
-		<h1>Student Login</h1>
-		<form action="/auth" method="post">
+		<h1>Admin Login</h1>
+		<form action="/authAdmin" method="post">
 			<div class="txt_field">
-				<input type="email" name="email" id="email" required>
+				<input type="email" name="adminEmail" id="adminEmail" required>
 				<span></span>
 				<label>Username</label>
 			</div>
 			<div class="txt_field">
 
-				<input type="password" name="lname" id="lname" required>
+				<input type="password" name="password" id="password" required>
 				<span></span>
 				<label>Password</label>
 			</div>
 			<input type="submit" value="Login">
 		</form>
-		<% if (errMsg==='success' ) { %>
-			<h4 style="color:green; font-size:70%;">
-				<p>Voilaa login successful </p>
-			</h4>
-			<% } else if(errMsg==='failure' ){%>
-				<h4 style="color:red; font-size:70%;">
-					<p>yes you forgot again! </p>
-				</h4>
+		<% if (errMsg !=='' ) {%>
+			<p style="color:red; font-size:70%;">
+				<%= errMsg %>
+			</p>
+			<% } else {%>
+				<p style="color:green; font-size:70%;">
+					<%= msg %>
+				</p>
 				<% } %>
 					<div class="signup_link">
 						Dont have Student Login? <a href="getForm" class="btn btn-primary">Sign Up</a>
 					</div>
 	</div>
+
 </body>
 
 </html>

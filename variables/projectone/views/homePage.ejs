@@ -1,45 +1,46 @@
 <!DOCTYPE html>
- 
+
 <html>
- 
+
 <head>
-    <title>
-        Simple web Development Template
-    </title>
+    <%- include('./head.ejs') %>
+        <title>
+            <%= title%>
+        </title>
 </head>
- 
+
 <body>
+    
+    
     <nav class="navbar background">
         <ul class="nav-list">
             <div class="logo">
                 <img src="logo.png">
             </div>
-            <li><a href="#web">Web Technology</a></li>
-            <li><a href="#program">C Programming</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <%- include('./nav.ejs') //we have made seperate file nav.ejs to store our links %>
         </ul>
- 
         <div class="rightNav">
             <input type="text" name="search" id="search">
-            <button class="btn btn-sm">Search</button> 
-
+            <button class="btn btn-sm">Search</button>
         </div>
         <div style="float:right">
-          <form align="right" name="form1" method="post" action="logout">
-             <label class="logoutLblPos">
-              <a href="logout" class="btn btn-primary">Logout</a>
-            </label>
-          </form>
-          </div>
+            <form align="right" name="form1" method="post" action="logout">
+                <label class="logoutLblPos">
+                    <a href="logout" class="btn btn-primary">Logout</a>
+                </label>
+            </form>
+        </div>
     </nav>
- 
-    <section class="firstsection">
+    <marquee direction="left" bgcolor="#1F45FC"><h1 style="color: aliceblue;" ><%= comment.join(",        ")%>  </h1></marquee>
+    
+
+    <section class="firstsection">sss
         <div class="box-main">
             <div class="firstHalf">
+                
                 <h1 class="text-big" id="web">
                     Web Technology
                 </h1>
-                 
                 <p class="text-small">
                     HTML stands for HyperText Markup
                     Language. It is used to design
@@ -56,12 +57,9 @@
                     content to display it in the required
                     format.
                 </p>
- 
- 
             </div>
         </div>
     </section>
- 
     <section class="secondsection">
         <div class="box-main">
             <div class="secondHalf">
@@ -80,16 +78,13 @@
                     system programming like operating system
                     or compiler development.
                 </p>
- 
- 
             </div>
         </div>
     </section>
- 
     <section class="section">
         <div class="paras">
             <h1 class="sectionTag text-big">Java</h1>
- 
+
             <p class="sectionSubTag text-small">
                 Java has been one of the most
                 popular programming language
@@ -104,21 +99,17 @@
                 Machine (JVM) regardless of the
                 underlying architecture.
             </p>
- 
- 
+
+
         </div>
- 
+
         <div class="thumbnail">
-            <img src="./images/pic_trulli.jpg"/>
+            <img src="./images/pic_trulli.jpg" />
         </div>
     </section>
- 
+
     <footer class="background">
-        <p class="text-footer">
-            Copyright ©️-All rights are reserved
-        </p>
- 
- 
+        <%- include('./footer.ejs') %>
     </footer>
 </body>
 
